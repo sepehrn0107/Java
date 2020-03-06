@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.SudokuController">
+   <children>
+      <TextField fx:id="s00" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="s18" layoutY="100.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s17" layoutX="400.0" layoutY="50.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s16" layoutX="350.0" layoutY="50.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s15" layoutX="300.0" layoutY="50.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s14" layoutX="250.0" layoutY="50.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s13" layoutX="200.0" layoutY="50.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s12" layoutX="150.0" layoutY="50.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s11" layoutX="100.0" layoutY="50.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets right="1.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="s10" layoutX="50.0" layoutY="50.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s09" layoutY="50.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s08" layoutX="400.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="s07" layoutX="350.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="s06" layoutX="300.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="s05" layoutX="250.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="s04" layoutX="200.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="s03" layoutX="150.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="s02" layoutX="100.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets right="1.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="s01" layoutX="50.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="s22" layoutX="200.0" layoutY="100.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s21" layoutX="150.0" layoutY="100.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s20" layoutX="100.0" layoutY="100.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets right="1.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="s73" layoutX="50.0" layoutY="400.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s64" layoutX="50.0" layoutY="350.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s55" layoutX="50.0" layoutY="300.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s46" layoutX="50.0" layoutY="250.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s37" layoutX="50.0" layoutY="200.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s28" layoutX="50.0" layoutY="150.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s19" layoutX="50.0" layoutY="100.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s72" layoutY="400.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s63" layoutY="350.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s54" layoutY="300.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s45" layoutY="250.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s36" layoutY="200.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s27" layoutY="150.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s65" layoutX="100.0" layoutY="350.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets right="1.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="s56" layoutX="100.0" layoutY="300.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets right="1.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="s47" layoutX="100.0" layoutY="250.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets right="1.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="s38" layoutX="100.0" layoutY="200.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets right="1.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="s35" layoutX="400.0" layoutY="150.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s34" layoutX="350.0" layoutY="150.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s33" layoutX="300.0" layoutY="150.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s32" layoutX="250.0" layoutY="150.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s31" layoutX="200.0" layoutY="150.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s30" layoutX="150.0" layoutY="150.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s26" layoutX="400.0" layoutY="100.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s25" layoutX="350.0" layoutY="100.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s24" layoutX="300.0" layoutY="100.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s23" layoutX="250.0" layoutY="100.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s29" layoutX="100.0" layoutY="150.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets right="1.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="s49" layoutX="200.0" layoutY="250.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s44" layoutX="400.0" layoutY="200.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s43" layoutX="350.0" layoutY="200.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s42" layoutX="300.0" layoutY="200.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s75" layoutX="150.0" layoutY="400.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s66" layoutX="150.0" layoutY="350.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s57" layoutX="150.0" layoutY="300.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s48" layoutX="150.0" layoutY="250.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s41" layoutX="250.0" layoutY="200.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s40" layoutX="200.0" layoutY="200.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s39" layoutX="150.0" layoutY="200.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s74" layoutX="100.0" layoutY="400.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <opaqueInsets>
+            <Insets right="1.0" />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="s61" layoutX="350.0" layoutY="300.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s53" layoutX="400.0" layoutY="250.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s52" layoutX="350.0" layoutY="250.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s60" layoutX="300.0" layoutY="300.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s59" layoutX="250.0" layoutY="300.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s76" layoutX="200.0" layoutY="400.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s67" layoutX="200.0" layoutY="350.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s58" layoutX="200.0" layoutY="300.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s51" layoutX="300.0" layoutY="250.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s50" layoutX="250.0" layoutY="250.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s71" layoutX="400.0" layoutY="350.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s70" layoutX="350.0" layoutY="350.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s77" layoutX="250.0" layoutY="400.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s69" layoutX="300.0" layoutY="350.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s68" layoutX="250.0" layoutY="350.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s62" layoutX="400.0" layoutY="300.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s80" layoutX="400.0" layoutY="400.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s79" layoutX="350.0" layoutY="400.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="s78" layoutX="300.0" layoutY="400.0" onAction="#handleDigit" onKeyPressed="#keyPressed" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="undo" layoutX="14.0" layoutY="470.0" mnemonicParsing="false" onAction="#undo" prefHeight="50.0" prefWidth="98.0" text="Undo" />
+      <Button fx:id="redo" layoutX="126.0" layoutY="470.0" mnemonicParsing="false" onAction="#redo" prefHeight="50.0" prefWidth="98.0" text="Redo" />
+      <Button fx:id="load" layoutX="246.0" layoutY="507.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="85.0" text="Load" />
+      <Button fx:id="save" layoutX="340.0" layoutY="507.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="85.0" text="Save" />
+      <TextField alignment="CENTER" layoutX="244.0" layoutY="457.0" prefHeight="40.0" prefWidth="180.0" text="Filename">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</Pane>
